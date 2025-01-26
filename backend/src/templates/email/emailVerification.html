@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Your Email Address</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #2563eb;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        .content {
+            background-color: #f9fafb;
+            padding: 20px;
+            border-radius: 0 0 5px 5px;
+        }
+        .verification-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .verification-code {
+            background-color: #e5e7eb;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            letter-spacing: 2px;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+        .warning {
+            color: #dc2626;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Verify Your Email Address</h1>
+    </div>
+    <div class="content">
+        <p>Dear {{name}},</p>
+        
+        <p>Thank you for registering with Stock Market Learning Platform. To complete your registration and access all features, please verify your email address by clicking the button below:</p>
+        
+        <center>
+            <a href="{{verificationUrl}}" class="verification-button">Verify Email Address</a>
+        </center>
+
+        <p>If the button above doesn't work, you can copy and paste the following URL into your browser:</p>
+        
+        <div class="verification-code">
+            {{verificationUrl}}
+        </div>
+
+        <p>This verification link will expire in 24 hours for security reasons.</p>
+
+        <p>Why verify your email?</p>
+        <ul>
+            <li>Access all platform features</li>
+            <li>Receive important notifications</li>
+            <li>Secure your account</li>
+            <li>Get trading alerts</li>
+        </ul>
+
+        <p class="warning">If you didn't create an account with Stock Market Learning Platform, please ignore this email or contact our support team if you have concerns.</p>
+
+        <p>Best regards,<br>The Stock Market Learning Team</p>
+    </div>
+    <div class="footer">
+        <p>This is an automated email, please do not reply.</p>
+        <p>© 2025 Stock Market Learning. All rights reserved.</p>
+    </div>
+</body>
+</html>

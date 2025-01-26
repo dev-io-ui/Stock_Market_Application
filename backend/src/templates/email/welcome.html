@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Stock Market Learning Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #2563eb;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        .content {
+            background-color: #f9fafb;
+            padding: 20px;
+            border-radius: 0 0 5px 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Stock Market Learning!</h1>
+    </div>
+    <div class="content">
+        <p>Dear {{name}},</p>
+        
+        <p>Welcome to Stock Market Learning Platform! We're excited to have you on board and help you start your journey in stock market trading.</p>
+        
+        <h2>What's Next?</h2>
+        <ul>
+            <li>Complete your profile</li>
+            <li>Browse our courses</li>
+            <li>Try virtual trading</li>
+            <li>Join our community discussions</li>
+        </ul>
+
+        <p>Get started by logging in to your account:</p>
+        
+        <a href="{{loginUrl}}" class="button">Log In Now</a>
+
+        <p>Here are some quick links to help you get started:</p>
+        <ul>
+            <li><a href="#">Beginner's Guide to Stock Market</a></li>
+            <li><a href="#">Virtual Trading Tutorial</a></li>
+            <li><a href="#">Community Guidelines</a></li>
+        </ul>
+
+        <p>If you have any questions, our support team is always here to help!</p>
+        
+        <p>Best regards,<br>The Stock Market Learning Team</p>
+    </div>
+    <div class="footer">
+        <p>This email was sent to you as part of your registration at Stock Market Learning Platform.</p>
+        <p>© 2025 Stock Market Learning. All rights reserved.</p>
+    </div>
+</body>
+</html>
